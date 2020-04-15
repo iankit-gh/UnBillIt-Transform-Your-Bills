@@ -147,8 +147,8 @@ header .navigation .menu-list li a {
 }
 .social-menu ul li .fa{
   font-size: 30px;
-  line-height: 60px;
-  transition: -6s;
+  line-height: 35px;
+  transition: -5s;
   color: #000;
 }
 .social-menu ul li .fa:hover{
