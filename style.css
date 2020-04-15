@@ -349,4 +349,54 @@ header .navigation .menu-list li a {
   }
 
 }
+li a, .servicesbtn
+{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover , .services:hover , .serivcesbtn
+{
+  background-color: #4CAF50;
+}
+li .services
+{
+  display: inline-block;
+}
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover
+{
+  background-color:#4CAF50;
+}
+.services:hover .dropdown-content
+{
+  display: block;
+}
+li a.active
+{
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
     
