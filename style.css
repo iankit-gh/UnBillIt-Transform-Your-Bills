@@ -56,13 +56,46 @@ header .navigation .humbarger .bar{
 
 header .navigation .menu-list li a {
   color: #b1d4e0;
-  font-size: 1.55rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  font-size: 1.78rem;
+  letter-spacing: 4px;
+  text-transform: capitalize;
   cursor: pointer;
   transition: color 1s ease, border 1s ease;
   text-decoration: none;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+  color: #4564f3;
+  padding: 16px 25px;
+  text-decoration: none;
+  display: block;
+  font-family: inherit;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+  color: #4e8897;
+}
+.dropdown-content a:hover {background-color: #45e849;}
+.fa-caret-down {
+  position: absolute;
+  color: white;
+  float:right;
+  margin-right: 0.5rem;
+
+}
+
 
 /* ====================
   Intro Section
@@ -147,7 +180,7 @@ header .navigation .menu-list li a {
 }
 .social-menu ul li .fa{
   font-size: 30px;
-  line-height: 35px;
+  line-height: 57px;
   transition: -5s;
   color: #000;
 }
@@ -160,7 +193,7 @@ header .navigation .menu-list li a {
   display: block;
   height: 60px;
   width: 60px;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: #b1d4e0;
   text-align: center;
   transition: -6s;
@@ -213,7 +246,7 @@ header .navigation .menu-list li a {
   }
   28% { 
     opacity: 0; 
-    height:2em; 
+    height:1.2em; 
   }
   
 }
@@ -349,7 +382,7 @@ header .navigation .menu-list li a {
   }
 
 }
-li a, .servicesbtn
+li a .servicesbtn
 {
   display: inline-block;
   color: white;
@@ -357,7 +390,7 @@ li a, .servicesbtn
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover , .services:hover , .serivcesbtn
+li a: hover .services:hover .serivcesbtn
 {
   background-color: #4CAF50;
 }
@@ -386,7 +419,7 @@ li .services
 {
   background-color:#4CAF50;
 }
-.services:hover .dropdown-content
+.user:hover .dropdown-content
 {
   display: block;
 }
